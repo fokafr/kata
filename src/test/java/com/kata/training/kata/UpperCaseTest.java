@@ -26,4 +26,13 @@ public void testmapToUppercaseJ8() {
 	assertTrue(UpperCase.mapToUppercaseJ8(names).containsAll(Arrays.asList(namesUpper)));
 }
 
+@Test
+
+public void testgetTotalNumberOfLettersOfNamesLongerThanFive() {
+	System.out.println("Testing if [aymar, franky, william, gille] returns  for Java 8 value of 13");
+	String[] names = {"aymar","franky","william","gille"};
+	//System.out.println(UpperCase.getTotalNumberOfLettersOfNamesLongerThanFive(names));
+	assertTrue(UpperCase.getTotalNumberOfLettersOfNamesLongerThanFive(names) == 13);
+}
+
 }

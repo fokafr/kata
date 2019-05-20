@@ -35,6 +35,6 @@ public class UpperCase {
 	
 	public static int getTotalNumberOfLettersOfNamesLongerThanFive(String... names) {
 		
-		return 0 ;
+		return Arrays.stream(names).map(str -> str.length()).filter(x -> x > 5).mapToInt(Integer::valueOf).sum();
 	}
 }
