@@ -35,4 +35,5 @@ public void testgetTotalNumberOfLettersOfNamesLongerThanFive() {
 	assertTrue(UpperCase.getTotalNumberOfLettersOfNamesLongerThanFive(names) == 13);
 }
 
+
 }
