@@ -5,6 +5,7 @@ import static org.junit.Assert.assertThat;
 import java.util.Arrays;
 import java.util.List;
 
+import org.hamcrest.collection.IsCollectionWithSize;
 import org.hamcrest.core.AnyOf;
 import org.hamcrest.core.Is;
 import org.hamcrest.core.IsCollectionContaining;
@@ -25,7 +26,8 @@ public class BiscuitTest extends TestCase{
 	      Person eva = new Person("Eva", 42);
 	      Person anna = new Person("Anna", 5);
 	      List<Person> collection = Arrays.asList(sara, eva, viktor, anna);
-	      assertThat(collection, );
+	      assertThat(collection, IsCollectionWithSize.hasSize(4));
+	      assertThat(collection, IsCollectionContaining.hasItem(eva));
 
 	    }
 }
